@@ -1,4 +1,4 @@
-# Bach Processing
+# Batch Processing
 ## `NYC-Taxi-Data`
 ===============================
 
@@ -91,18 +91,39 @@ Processing: Databricks (Python, SQL)
 
 
 ## `Setting up the System` 
-#### Prerequisites
-1- Setup Azure Data Lake Gen2 account with credential
-- `create Azure container in Data Lake`
-- `Upload files into Data Lake`
+  #### Prerequisites
+  1- Setup Azure Data Lake Gen2 account with credential
+  - `create Azure container in Data Lake`
+  - `Upload files into Data Lake`
 
 2-  Create Azure AD App(Service Principal)
 - `save  Client Id,Client Secret & Tenant Id` to create the connection and monting
 
 3- Grant access with Role(Storage Bolb Data Contributor) to Azure AD App to read and write File From Data Lake  
 
-4- Create Azure Databricks Workspace and lauch the Workspace
-  - `Setup Cluster in databricks ` to run a different notebook
+4- Azure Databricks Workspace Setup
+
+  a- Create & Launch Workspace
+  - `Provision an Azure Databricks workspace via Azure Portal `
+  - `Launch the workspace to configure pipelines`
+
+  b- Cluster Configuration
+  - `Set up an all-purpose interactive cluster for development/testing` : Allows running multiple notebooks/pipelines on a single cluster
+     Optimizes cost by avoiding repeated cluster startups
+
+
+## `Screenshots`
+
+#### YellowTaxis_SilverLive Data Quality
+![YelloTaxis_SilverLive.png](Images%2FYelloTaxis_SilverLive.png)
+
+#### YellowTaxis_SummaryByLocationGold Data Quality
+![YellowTaxis_GoldLive.png](Images%2FYellowTaxis_GoldLive.png)
+
+#### Yellowtaxipipeline liste
+![YellowTaxiPipeline.png](Images%2FYellowTaxiPipeline.png)
+
+                       
 
 
 
