@@ -114,6 +114,9 @@ Processing: Databricks (Python, SQL)
 
 ## `Screenshots`
 
+#### Star Schema Yellow Taxi
+![Star_Schema_Taxi-Data.drawio.png](Images%2FStar_Schema_Taxi-Data.drawio.png)
+
 #### YellowTaxis_SilverLive Data Quality
 ![YelloTaxis_SilverLive.png](Images%2FYelloTaxis_SilverLive.png)
 
