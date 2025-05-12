@@ -24,6 +24,8 @@ Cloud: Microsoft Azure (Data Lake Gen2, Blob Storage)
 
 Processing: Databricks (Python, SQL)
 
+visualization: Power BI (Dashboard)
+
 
 
 
@@ -62,6 +64,12 @@ Processing: Databricks (Python, SQL)
              - `Valid_TotalAmount` : Drop rows where TotalAmount is null or ≤ 0.
              - `Valid_TripDistance` :  Drop rows with TripDistance ≤ 0.
              - `Valid_RideId ` : Fail pipeline if RideId is invalid (null or ≤ 0).
+   3. Dashboard Features
+    - The dashboard includes several key insights to support vendor performance analysis:
+    - Total Number of Trips: Displays the overall number of rides completed.
+    - Total Trip Distance: Aggregates the total kilometers traveled across all vendors.
+    - Comparison by Zone: Compares the total trip distance and total amount earned per zone.
+    - Vendor Filter: An interactive filter allows users to select a specific vendor and view detailed metrics related to that vendor only.
 
 
 
@@ -86,6 +94,11 @@ Processing: Databricks (Python, SQL)
     data storage 
        ▼  
 [Delta table store in Azure data lake gen2] 
+  
+       │ 
+    data visualization
+       ▼  
+   [Power BI]
 
 
 
@@ -115,16 +128,22 @@ Processing: Databricks (Python, SQL)
 ## `Screenshots`
 
 #### Star Schema Yellow Taxi
-![Star_Schema_Taxi-Data.drawio.png](Images%2FStar_Schema_Taxi-Data.drawio.png)
+![Star_schema_taxi_data.png](Images%2FStar_schema_taxi_data.png)
+
+#### YellowTaxis_SilverLive Table
+![Yellow_Taxis_SilverLive_Table.png](Images%2FYellow_Taxis_SilverLive_Table.png)
 
 #### YellowTaxis_SilverLive Data Quality
-![YelloTaxis_SilverLive.png](Images%2FYelloTaxis_SilverLive.png)
+![Yellow_Taxis_SilverLive.png](Images%2FYellow_Taxis_SilverLive.png)
 
 #### YellowTaxis_SummaryByLocationGold Data Quality
 ![YellowTaxis_GoldLive.png](Images%2FYellowTaxis_GoldLive.png)
 
 #### Yellowtaxipipeline liste
 ![YellowTaxiPipeline.png](Images%2FYellowTaxiPipeline.png)
+
+#### Vendor Analysis Visualization
+![Vendor_Analysis.png](Images%2FVendor_Analysis.png)
 
                        
 
