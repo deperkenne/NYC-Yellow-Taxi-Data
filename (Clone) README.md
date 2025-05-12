@@ -1,4 +1,4 @@
-# Batch Processing
+# Bach Processing
 ## `NYC-Taxi-Data`
 ===============================
 
@@ -23,8 +23,6 @@ Data quality checks, time-based partitioning, and business-ready aggregates
 Cloud: Microsoft Azure (Data Lake Gen2, Blob Storage)
 
 Processing: Databricks (Python, SQL)
-
-visualization: Power BI (Dashboard)
 
 
 
@@ -64,12 +62,6 @@ visualization: Power BI (Dashboard)
              - `Valid_TotalAmount` : Drop rows where TotalAmount is null or ≤ 0.
              - `Valid_TripDistance` :  Drop rows with TripDistance ≤ 0.
              - `Valid_RideId ` : Fail pipeline if RideId is invalid (null or ≤ 0).
-   3. Dashboard Features
-    - The dashboard includes several key insights to support vendor performance analysis:
-    - Total Number of Trips: Displays the overall number of rides completed.
-    - Total Trip Distance: Aggregates the total kilometers traveled across all vendors.
-    - Comparison by Zone: Compares the total trip distance and total amount earned per zone.
-    - Vendor Filter: An interactive filter allows users to select a specific vendor and view detailed metrics related to that vendor only.
 
 
 
@@ -94,58 +86,23 @@ visualization: Power BI (Dashboard)
     data storage 
        ▼  
 [Delta table store in Azure data lake gen2] 
-  
-       │ 
-    data visualization
-       ▼  
-   [Power BI]
 
 
 
 
 ## `Setting up the System` 
-  #### Prerequisites
-  1- Setup Azure Data Lake Gen2 account with credential
-  - `create Azure container in Data Lake`
-  - `Upload files into Data Lake`
+#### Prerequisites
+1- Setup Azure Data Lake Gen2 account with credential
+- `create Azure container in Data Lake`
+- `Upload files into Data Lake`
 
 2-  Create Azure AD App(Service Principal)
 - `save  Client Id,Client Secret & Tenant Id` to create the connection and monting
 
 3- Grant access with Role(Storage Bolb Data Contributor) to Azure AD App to read and write File From Data Lake  
 
-4- Azure Databricks Workspace Setup
-
-  a- Create & Launch Workspace
-  - `Provision an Azure Databricks workspace via Azure Portal `
-  - `Launch the workspace to configure pipelines`
-
-  b- Cluster Configuration
-  - `Set up an all-purpose interactive cluster for development/testing` : Allows running multiple notebooks/pipelines on a single cluster
-     Optimizes cost by avoiding repeated cluster startups
-
-
-## `Screenshots`
-
-#### Star Schema Yellow Taxi
-![Star_schema_taxi_data.png](Images%2FStar_schema_taxi_data.png)
-
-#### YellowTaxis_SilverLive Table
-![Yellow_Taxis_SilverLive_Table.png](Images%2FYellow_Taxis_SilverLive_Table.png)
-
-#### YellowTaxis_SilverLive Data Quality
-![Yellow_Taxis_SilverLive.png](Images%2FYellow_Taxis_SilverLive.png)
-
-#### YellowTaxis_SummaryByLocationGold Data Quality
-![YellowTaxis_GoldLive.png](Images%2FYellowTaxis_GoldLive.png)
-
-#### Yellowtaxipipeline liste
-![YellowTaxiPipeline.png](Images%2FYellowTaxiPipeline.png)
-
-#### Vendor Analysis Visualization
-![Vendor_Analysis.png](Images%2FVendor_Analysis.png)
-
-                       
+4- Create Azure Databricks Workspace and lauch the Workspace
+  - `Setup Cluster in databricks ` to run a different notebook
 
 
 
