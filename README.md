@@ -130,9 +130,8 @@ visualization: Power BI (Dashboard)
 #### Star Schema Yellow Taxi
 ![Star_schema_taxi_data.png](Images%2FStar_schema_taxi_data.png)
 
-#### YellowTaxis_SilverLive Table
-![Yellow_Taxis_SilverLive_Table.png](Images%2FYellow_Taxis_SilverLive_Table.png)
-
+#### YellowTaxis_BronzeLive Schema
+![Yellow_Taxis_BronzeLive.png](Images%2FYellow_Taxis_BronzeLive.png)
 #### YellowTaxis_SilverLive Data Quality
 ![Yellow_Taxis_SilverLive.png](Images%2FYellow_Taxis_SilverLive.png)
 
@@ -141,6 +140,12 @@ visualization: Power BI (Dashboard)
 
 #### Yellowtaxipipeline liste
 ![YellowTaxiPipeline.png](Images%2FYellowTaxiPipeline.png)
+
+#### YellowTaxis_SilverLive Table
+![Yellow_Taxis_SilverLive_Table.png](Images%2FYellow_Taxis_SilverLive_Table.png)
+
+#### Azure Data Lake Gen2 output Delta file
+![Azure_Data_Lake_YellowTaxis_SilverLive_Delta.png](Images%2FAzure_Data_Lake_YellowTaxis_SilverLive_Delta.png)
 
 #### Vendor Analysis Visualization
 ![Vendor_Analysis.png](Images%2FVendor_Analysis.png)
